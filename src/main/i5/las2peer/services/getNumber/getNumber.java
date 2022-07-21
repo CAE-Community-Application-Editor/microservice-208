@@ -116,7 +116,7 @@ public class getNumber extends RESTService {
     // getNumber
     boolean getNumber_condition = true;
     if(getNumber_condition) {
-      String getNumber = "Some String";
+      String getNumber = "My button";
 
       
 
