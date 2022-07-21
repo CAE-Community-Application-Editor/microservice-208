@@ -71,9 +71,9 @@ public class getNumber extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "208", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "208", version = "",
+          description = "",
+          termsOfService = "",
           contact = @Contact(name = "David", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/CAE-Community-Application-Editor/microservice-208/blob/master/LICENSE.txt") ) )
@@ -84,7 +84,7 @@ public class getNumber extends RESTService {
 
       /**
    * 
-   * 
+   * getNumber
    *
    * 
    *
@@ -93,14 +93,14 @@ public class getNumber extends RESTService {
    * 
    */
   @GET
-  @Path("/")
+  @Path("/number")
   @Produces(MediaType.TEXT_PLAIN)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
        @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "getNumber")
   })
-  @ApiOperation(value = "", notes = " ")
-  public Response () {
+  @ApiOperation(value = "getNumber", notes = " ")
+  public Response getNumber() {
 
 
 
@@ -116,7 +116,7 @@ public class getNumber extends RESTService {
     // getNumber
     boolean getNumber_condition = true;
     if(getNumber_condition) {
-      String getNumber = "My number";
+      String getNumber = "Some String";
 
       
 

@@ -92,20 +92,20 @@ public class getNumberTest {
 
   /**
    * 
-   * Test for the  method.
+   * Test for the getNumber method.
    * 
    */
   @Test
-  public void test() {
+  public void testgetNumber() {
     MiniClient c = new MiniClient();
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     try {
 
       c.setLogin(testAgent.getIdentifier(), testPass);
-      ClientResponse result = c.sendRequest("GET", mainPath + "/", "",
+      ClientResponse result = c.sendRequest("GET", mainPath + "/number", "",
         MediaType.TEXT_PLAIN, MediaType.TEXT_PLAIN, new HashMap<String,String>());
       assertTrue(true); // change here
-      System.out.println("Result of 'test': " + result.getResponse().trim());
+      System.out.println("Result of 'testgetNumber': " + result.getResponse().trim());
     } catch (Exception e) {
       e.printStackTrace();
       fail("Exception: " + e);
