@@ -1,4 +1,4 @@
-package i5.las2peer.services.getNumber;
+package i5.las2peer.services.number;
 
 
 import java.net.HttpURLConnection;
@@ -47,13 +47,13 @@ import java.util.Map;
  */
 @ServicePath("number")
 @ManualDeployment
-public class getNumber extends RESTService {
+public class number extends RESTService {
 
 
 
 
 
-  public getNumber() {
+  public number() {
 	super();
     // read and set properties values
     setFieldValues();
@@ -80,11 +80,11 @@ public class getNumber extends RESTService {
   @Path("/")
   public static class RootResource {
 
-    private final getNumber service = (getNumber) Context.getCurrent().getService();
+    private final number service = (number) Context.getCurrent().getService();
 
       /**
    * 
-   * getNumber
+   * number
    *
    * 
    *
@@ -97,10 +97,10 @@ public class getNumber extends RESTService {
   @Produces(MediaType.TEXT_PLAIN)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "getNumber")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "number")
   })
-  @ApiOperation(value = "getNumber", notes = " ")
-  public Response getNumber() {
+  @ApiOperation(value = "number", notes = " ")
+  public Response number() {
 
 
 
@@ -113,14 +113,14 @@ public class getNumber extends RESTService {
 
 
 
-    // getNumber
-    boolean getNumber_condition = true;
-    if(getNumber_condition) {
-      String getNumber = "My button";
+    // number
+    boolean number_condition = true;
+    if(number_condition) {
+      String number = "Some String";
 
       
 
-      return Response.status(HttpURLConnection.HTTP_OK).entity(getNumber).build();
+      return Response.status(HttpURLConnection.HTTP_OK).entity(number).build();
     }
     return null;
   }

@@ -1,4 +1,4 @@
-package i5.las2peer.services.getNumber;
+package i5.las2peer.services.number;
 
 import java.util.*;
 import org.json.simple.*;
